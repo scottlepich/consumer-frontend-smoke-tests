@@ -1,0 +1,20 @@
+{
+  "name": "consumer-frontend-smoke-tests",
+  "version": "0.0.0",
+  "description": "Production smoke tests to run after CFE deploys",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cy:record": "cypress run --record --key 0404075f-9ec0-4a22-855a-9d7d4cfdbc77"
+  },
+  "keywords": [],
+  "author": "slepich@opentable.com",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.16.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
