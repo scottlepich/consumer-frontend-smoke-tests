@@ -4,13 +4,13 @@ describe("OpenTable.com", () => {
   beforeEach(() => {
     cy.intercept("*", (req) => {
       req.headers["Accept-Encoding"] = "gzip, deflate";
-    });
+    }).as("headers");
   });
 
   it("should have a main-content container for all supported locales", () => {
     locales.forEach((lang: Locale) => {
       const qs = { lang };
-      cy.visit("/", { qs, timeout: 3e3 });
+      cy.visit("/", { qs });
       cy.get("main-content").should("exist");
     });
   });

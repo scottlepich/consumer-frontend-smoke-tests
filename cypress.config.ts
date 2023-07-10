@@ -6,4 +6,5 @@ export default defineConfig({
     modifyObstructiveCode: false,
   },
   projectId: "8e4u8s",
+  retries: 0,
 });
