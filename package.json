@@ -11,10 +11,10 @@
   "author": "slepich@opentable.com",
   "license": "ISC",
   "dependencies": {
-    "@testing-library/cypress": "^9.0.0",
-    "cypress": "^12.16.0"
+    "@testing-library/cypress": "^9.0.0"
   },
   "devDependencies": {
+    "cypress": "^12.17.0",
     "typescript": "^5.1.6"
   }
 }
