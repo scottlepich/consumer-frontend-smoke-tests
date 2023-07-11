@@ -11,7 +11,7 @@ describe("OpenTable.com", () => {
     locales.forEach((lang: Locale) => {
       const qs = { lang };
       cy.visit("/", { qs });
-      cy.get("main-content").should("exist");
+      cy.get("#mainContent").should("exist");
     });
   });
 });
