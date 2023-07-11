@@ -18,3 +18,9 @@ import "./commands";
 import { configure } from "@testing-library/cypress";
 
 configure({ testIdAttribute: "data-test" });
+
+before(() => {
+  cy.intercept("*", (req) => {
+    req.headers["Accept-Encoding"] = "gzip, deflate";
+  }).as("accept-encoding");
+});
